@@ -24,9 +24,13 @@ I've been learning code for 3 years and my next language is Swift.
 ### Badges
 
 <b>My GitHub Stats</b>
+
 <a href="http://www.github.com/ThemeHackers"><img src="https://github-readme-stats.vercel.app/api?username=ThemeHackers&show_icons=true&hide=&count_private=true&title_color=ffffff&text_color=ffffff&icon_color=22c55e&bg_color=000000&hide_border=true&show_icons=true" alt="ThemeHackers's GitHub stats" /></a>
 <a href="https://github.com/ThemeHackers" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThemeHackers&langs_count=10&title_color=ffffff&text_color=ffffff&icon_color=22c55e&bg_color=000000&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
 <b>Top Repositories</b>
+
 <div width="100%" align="center"><a href="https://github.com/ThemeHackers/AppleBLE" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ThemeHackers&repo=AppleBLE&title_color=ffffff&text_color=ffffff&icon_color=22c55e&bg_color=000000&hide_border=true&locale=en" /></a><a href="https://github.com/ThemeHackers/WOLSERVER" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ThemeHackers&repo=WOLSERVER&title_color=ffffff&text_color=ffffff&icon_color=22c55e&bg_color=000000&hide_border=true&locale=en" /></a></div><br /><br /><br /><br /><br /><br /><br />
+
 <br /><br /><br /><br /><br />
+
 <div width="100%" align="center"><a href="https://github.com/ThemeHackers/CVE-2024-6387" align="left"><img align="left" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ThemeHackers&repo=CVE-2024-6387&title_color=ffffff&text_color=ffffff&icon_color=22c55e&bg_color=000000&hide_border=true&locale=en" /></a><a href="https://github.com/ThemeHackers/CVE-2024-3094-info" align="right"><img align="right" width="45%" src="https://github-readme-stats.vercel.app/api/pin/?username=ThemeHackers&repo=CVE-2024-3094-info&title_color=ffffff&text_color=ffffff&icon_color=22c55e&bg_color=000000&hide_border=true&locale=en" /></a></div>
