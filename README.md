@@ -4,11 +4,11 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Network security Hacker and Software Dev (White Hat)
 ----------------------------------------
 
-I've been learning code for 3 years and my next language is Golang.
+I've been learning code for 4 years and my next language is Assembly!!.
 
 *   🌍  I'm based in BangYai , Nontaburi
 *   ✉️  You can contact me at [tigerzaza5678@gmail.com](mailto:tigerzaza5678@gmail.com)
-*   🧠  I'm learning Swift language and Security is becoming more sophisticated in depth
+*   🧠  I'm learning Assembly language and Security is becoming more sophisticated in depth
 *   🤝  I'm open to collaborating on Ethical Penetration Testing Tools or Vulnerability Discovery Tools
 
 ### Skills 
