@@ -1,7 +1,7 @@
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif)My name is Theme
 ===================================================================================================================================
 
-Network security Hacker and Software Dev (White Hat)
+Network Security Hacker and Software Dev (White Hat)
 ----------------------------------------
 
 I've been learning code for 5 years and my next language is golang!!.
