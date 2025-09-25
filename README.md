@@ -4,7 +4,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 Network Security Hacker and Software Dev (White Hat)
 ----------------------------------------
 
-I've been learning code for 5 years and my next language is golang!!.
+I've been learning code for 6 years and my next language is golang!!.
 
 *   🌍  I'm based in BangYai , Nontaburi
 *   ✉️  You can contact me at [tigerzaza5678@gmail.com](mailto:tigerzaza5678@gmail.com)
