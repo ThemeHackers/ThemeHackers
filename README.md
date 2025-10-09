@@ -2,6 +2,7 @@ Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-912
 ===================================================================================================================================
 
 Network Security Hacker and Software Dev (White Hat)
+- I have been made aware of people and websites referencing my repo, and I really appreciate it.
 ----------------------------------------
 
 I've been learning code for 6 years and my next language is golang!!.
@@ -23,5 +24,6 @@ I've been learning code for 6 years and my next language is golang!!.
 
 ### MetaMask
 * 0xB0e79669b1915093BF38c444d6E0a8C9A9C29d47
+
 
 
