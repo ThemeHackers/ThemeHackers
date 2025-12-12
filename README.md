@@ -85,7 +85,7 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 <a href="https://www.github.com/ThemeHackers" target="_blank" rel="noreferrer">
   <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
 </a>&nbsp;
-<a href="http://www.instagram.com/@_tthemzdl5678" target="_blank" rel="noreferrer">
+<a href="http://www.instagram.com/_tthemzdl5678" target="_blank" rel="noreferrer">
   <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white" alt="Instagram" />
 </a>&nbsp;
 <a href="https://www.threads.net/@_tthemzdl5678" target="_blank" rel="noreferrer">
