@@ -76,6 +76,18 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 </a>
 </p>
 
+---
+
+## 📈 Live Languages & Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThemeHackers&layout=compact&langs_count=10&theme=transparent" alt="Top languages from recent repositories" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ThemeHackers&custom_title=Real-time%20Contribution%20Graph&hide_border=true&theme=github-compact" alt="Real-time activity graph" />
+</p>
+
 ## 🌐 Connect With Me
 
 <p align="center">
@@ -115,5 +127,3 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 <div align="center">
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer" width="100%" />
 </div>
-
-
