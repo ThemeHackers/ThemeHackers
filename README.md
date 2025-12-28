@@ -80,9 +80,9 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 
 ## 📈 Live Languages & Activity
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThemeHackers&layout=compact&langs_count=10&theme=transparent" alt="Top languages from recent repositories" />
-</p>
+</p> -->
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ThemeHackers&custom_title=Real-time%20Contribution%20Graph&hide_border=true&theme=github-compact" alt="Real-time activity graph" />
