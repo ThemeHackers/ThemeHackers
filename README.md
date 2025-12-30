@@ -78,6 +78,110 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 
 ---
 
+## 🏅 Certificates & Certifications
+
+<details>
+<summary><b>🌐 Cisco</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| Computer Hardware Basics | <img src="certi/Cisco/ComputerHardwareBasicsUpdate20250614-26-gui2oy_page-0001.jpg" width="400" /> |
+| Networking Basics | <img src="certi/Cisco/NetworkingBasicsUpdate20250621-25-klbpaj.png" width="400" /> |
+| Introduction to Cybersecurity | <img src="certi/Cisco/introduction_to_cybersecurity.png" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>📊 DataCamp</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| AI Fundamentals | <img src="certi/DATACAMP/AIEDA0017559086761/AIEDA0017559086761-1.png" width="400" /> |
+| Python Data Analysis | <img src="certi/DATACAMP/PDA0019585449424_page-0001.jpg" width="400" /> |
+| DataCamp Certificate | <img src="certi/DATACAMP/certificate/certificate-1.png" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>🔍 Google</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| Foundations of Cybersecurity | <img src="certi/GOOGLE/Foundations of Cybersecurity.png" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>🛡️ ISC2</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| Domain 1 - Security Principles | <img src="certi/ISC2/domain1-1.png" width="400" /> |
+| Domain 2 - Business Continuity, Disaster Recovery & Incident Response | <img src="certi/ISC2/domain2-1.png" width="400" /> |
+| Domain 3 - Access Controls Concepts | <img src="certi/ISC2/domain3-1.png" width="400" /> |
+| Domain 4 - Network Security | <img src="certi/ISC2/domain4-1.png" width="400" /> |
+| Domain 5 - Security Operations | <img src="certi/ISC2/domain5.png" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>💻 JustHacking</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| JustHacking Certificate 1 | <img src="certi/JustHacking/1954bbeb-de61-462d-ae1b-e0207eb2cdd4.jpg" width="400" /> |
+| JustHacking Certificate 2 | <img src="certi/JustHacking/3c572bca-ed90-4988-ad8c-ae76bda64859.jpg" width="400" /> |
+| JustHacking Certificate 3 | <img src="certi/JustHacking/51809382-7061-4781-815e-67c574f911f6.jpg" width="400" /> |
+| JustHacking Certificate 4 | <img src="certi/JustHacking/6050d361-fd8a-42f1-aeda-99a3a6dfe38f.jpg" width="400" /> |
+| JustHacking Certificate 5 | <img src="certi/JustHacking/bebe780c-4716-4ae4-a784-fc683d9dc13c.jpg" width="400" /> |
+| JustHacking Certificate 6 | <img src="certi/JustHacking/d1231013-d996-4dc8-bb61-29b0a229da85.jpg" width="400" /> |
+| JustHacking Certificate 7 | <img src="certi/JustHacking/dc836d64-eed1-47fd-9dd2-b86feabfc585.jpg" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>🪟 Microsoft Thailand</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| Microsoft Certificate 1 | <img src="certi/Microsoft-TH/6c609f3b-47a9-442e-b2f1-77e8cd0bf772-1.png" width="400" /> |
+| Microsoft Certificate 2 | <img src="certi/Microsoft-TH/f88a261f-f49b-4c33-a84e-ccea6702c12f-1.png" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>🇹🇭 NCSA (National Cyber Security Agency)</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| NCSA Certificate 1 | <img src="certi/NCSA/4243438993PT-1.png" width="400" /> |
+| NCSA Certificate 2 | <img src="certi/NCSA/495049736_1432588677924809_9162765321794650939_n.jpg" width="400" /> |
+| NCSA Certificate 3 | <img src="certi/NCSA/9682990965PT-1.png" width="400" /> |
+| NCSA Certificate 4 | <img src="certi/NCSA/IMG_4694.png" width="400" /> |
+
+</details>
+
+<details>
+<summary><b>🔴 Red Team Leaders</b></summary>
+<br>
+
+| Certificate | Preview |
+|------------|---------|
+| Certified Certificate | <img src="certi/REDTEAMLEADERS/certified_certificate.jpg" width="400" /> |
+| Certified Red Certificate | <img src="certi/REDTEAMLEADERS/certified_red_certificate.jpg" width="400" /> |
+| Introduction Certificate | <img src="certi/REDTEAMLEADERS/introduction_certificate.jpg" width="400" /> |
+
+</details>
+
+---
+
 ## 📈 Live Languages & Activity
 
 <!-- <p align="center">
