@@ -179,6 +179,7 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 | CECB | <img src="certi/REDTEAMLEADERS/certified_certificate_cecb.jpg" width="400" /> |
 | CSCRB | <img src="certi/REDTEAMLEADERS/certified_certificate_cscrb.jpg" width="400" /> |
 | CCPC | <img src="certi/REDTEAMLEADERS/certified_c_certificate.jpg" width="400" /> |
+| CTIGA | <img src="certi/REDTEAMLEADERS/certified_certificate_ctiga.jpg" width="400" /> |
 | Introduction Certificate | <img src="certi/REDTEAMLEADERS/introduction_certificate.jpg" width="400" /> |
 
 </details>
