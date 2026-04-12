@@ -174,6 +174,7 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 
 | Certificate | Preview |
 |------------|---------|
+| COWA | <img src="certi/REDTEAMLEADERS/certified_certificate_cowa.png" width="400" /> |
 | CCEP | <img src="certi/REDTEAMLEADERS/certified_certificate.jpg" width="400" /> |
 | CRTOM | <img src="certi/REDTEAMLEADERS/certified_red_certificate.jpg" width="400" /> |
 | CECB | <img src="certi/REDTEAMLEADERS/certified_certificate_cecb.jpg" width="400" /> |
