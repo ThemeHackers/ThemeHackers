@@ -220,10 +220,7 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 
 <div align="center">
 
-### MetaMask
-`0xB0e79669b1915093BF38c444d6E0a8C9A9C29d47`
 
-⚠️ *Always verify wallet addresses before sending any cryptocurrency*
 
 <br>
 
