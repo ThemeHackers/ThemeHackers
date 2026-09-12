@@ -1,9 +1,11 @@
 <div align="center">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header" width="100%" />
 
 # Hi there! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" width="30px" height="30px"> I'm Theme
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Network+Security+Hacker+%26+Software+Dev;White+Hat+%7C+Ethical+Hacker;6%2B+Years+of+Coding+Experience;Golang+Enthusiast)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Network+Security+Hacker+%26+Software+Dev;White+Hat+%7C+Ethical+Hacker;CVE+Research+%26+PoC+Development;6%2B+Years+of+Coding+Experience;Learning+Golang)](https://git.io/typing-svg)
 
+<a href="https://github.com/ThemeHackers?tab=followers"><img src="https://img.shields.io/github/followers/ThemeHackers?label=Followers&style=flat&color=0e75b6" alt="Followers" /></a>
 <img src="https://komarev.com/ghpvc/?username=ThemeHackers&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
 
 </div>
@@ -13,47 +15,138 @@
 ## 🎯 About Me
 
 > *I have been made aware of people and websites referencing my repo, and I really appreciate it.*
- 
-I've been learning code for **6 years** and my next language is **Golang**!!
 
+I've been coding for **6+ years**, focused on **network security & ethical hacking** — currently learning **Golang** and digging deeper into **Apple's security**.
 
-<table>
-<tr>
-<td>
-
-- 🌍 Based in **BangYai, Nontaburi**
+- 🌍 Based in **Bang Yai, Nonthaburi, Thailand**
 - ✉️ Contact me at **[tigerzaza5678@gmail.com](mailto:tigerzaza5678@gmail.com)**
-- 🧠 Currently learning **Golang** and diving deeper into **Security**
+- 🔭 I publish **CVE research with PoCs and lab environments** so people can safely understand how real vulnerabilities work
 - 🤝 Open to collaborate on **Ethical Penetration Testing Tools** or **Vulnerability Discovery Tools**
 - 🍎 Getting interested in **Apple's security**
+- 🎯 Next mission: master **Golang**
 
-</td>
-<td>
+---
 
-</td>
-</tr>
+## 🛠️ Tech Stack
+
+**Languages & Development**
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=c,cpp,python,bash,html,mysql,vscode,arduino,docker&theme=dark" alt="Languages & tools" />
+</a>
+
+**Platforms & Systems**
+
+<a href="https://skillicons.dev">
+  <img src="https://skillicons.dev/icons?i=linux,kali,apple,raspberrypi&theme=dark" alt="Platforms" />
+</a>
+
+<!-- Security toolkit — แก้/ลบออกได้ตามที่ใช้จริง -->
+**Security Toolkit**
+
+![Nmap](https://img.shields.io/badge/Nmap-2E5C8A?style=for-the-badge)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge)
+![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge)
+![Ghidra](https://img.shields.io/badge/Ghidra-2F2F2F?style=for-the-badge)
+![Hashcat](https://img.shields.io/badge/Hashcat-1D7EBA?style=for-the-badge)
+
+---
+
+## 🚀 Featured Projects
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2024-38063">CVE-2024-38063</a></h3>
+      <p align="center">RCE in the Windows TCP/IP stack — PoC & lab environment</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/CVE-2024-38063/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/CVE-2024-38063?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2024-38063?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2025-24071">CVE-2025-24071</a></h3>
+      <p align="center">Windows File Explorer spoofing vulnerability — PoC</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/CVE-2025-24071/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/CVE-2025-24071?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2025-24071?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2025-54100">CVE-2025-54100</a></h3>
+      <p align="center">Command injection in PowerShell 5.1 Invoke-WebRequest — PoC</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/CVE-2025-54100/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/CVE-2025-54100?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2025-54100?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2025-55182">CVE-2025-55182</a></h3>
+      <p align="center">RCE in React Server Components (RSC) — PoC & lab environment</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/CVE-2025-55182/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/CVE-2025-55182?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2025-55182?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/AppleBLE">AppleBLE</a></h3>
+      <p align="center">Advertising Apple devices over BLE (Bluetooth Low Energy)</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/AppleBLE/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/AppleBLE?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/AppleBLE?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/NetHawk">NetHawk</a></h3>
+      <p align="center">Network attack detection with Discord alerts, score reports & attack paths</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/NetHawk/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/NetHawk?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/NetHawk?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+  </tr>
 </table>
 
 ---
 
-## 🛠️ Skills & Technologies
+## 📊 GitHub Stats
 
-<table align="center">
-  <tr>
-    <td><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/cplusplus-colored.svg" width="40" height="40" alt="C++" /></a></td>
-    <td><a href="https://docs.microsoft.com/en-us/cpp/?view=msvc-170"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/c-colored.svg" width="40" height="40" alt="C" /></a></td>
-    <td><a href="https://www.python.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="40" height="40" alt="Python" /></a></td>
-    <td><a href="https://www.gnu.org/software/bash/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/gnubash.svg" width="40" height="40" alt="Bash" /></a></td>
-    <td><a href="https://code.visualstudio.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/visualstudiocode.svg" width="40" height="40" alt="VS Code" /></a></td>
-    <td><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="40" height="40" alt="HTML5" /></a></td>
-    <td><a href="https://www.mysql.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="40" height="40" alt="MySQL" /></a></td>
-    <td><a href="https://store.arduino.cc/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/arduino-colored.svg" width="40" height="40" alt="Arduino" /></a></td>
-    <td><a href="https://www.linux.org"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/linux-colored.svg" width="40" height="40" alt="Linux" /></a></td>
-    <td><a href="https://www.docker.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/docker-colored.svg" width="40" height="40" alt="Docker" /></a></td>
-    <td><a href="https://apple.com"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/macos-colored-dark.svg" width="40" height="40" alt="MacOS" /></a></td>
-    <td><a href="https://www.raspberrypi.org/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/raspberrypi-colored.svg" width="40" height="40" alt="Raspberry Pi" /></a></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ThemeHackers&theme=radical" alt="GitHub stats" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ThemeHackers&theme=radical&utcOffset=7" alt="Productive time" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ThemeHackers&theme=radical" alt="Repos per language" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ThemeHackers&theme=radical" alt="Most commit language" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=ThemeHackers&theme=radical&hide_border=true" alt="GitHub streak" />
+</p>
+
+---
+
+## 🐍 Contribution Visuals
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ThemeHackers/ThemeHackers/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ThemeHackers/ThemeHackers/output/github-contribution-grid-snake.svg" />
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/ThemeHackers/ThemeHackers/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ThemeHackers/ThemeHackers/output/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution graph" />
+</p>
+
+<!-- ⚠️ สองรูปด้านบนจะปรากฏหลังจาก push แล้ว GitHub Actions (Generate Snake) รันสำเร็จ 1 ครั้ง — เปิดที่แท็บ Actions ได้เลย -->
 
 ---
 
@@ -167,11 +260,6 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 
 ---
 
-
-<!-- <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ThemeHackers&layout=compact&langs_count=10&theme=transparent" alt="Top languages from recent repositories" />
-</p> -->
-
 ## 🌐 Connect With Me
 
 <p align="center">
@@ -186,6 +274,9 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 </a>&nbsp;
 <a href="https://www.threads.net/@_tthemzdl5678" target="_blank" rel="noreferrer">
   <img src="https://img.shields.io/badge/Threads-000000?style=for-the-badge&logo=Threads&logoColor=white" alt="Threads" />
+</a>&nbsp;
+<a href="mailto:tigerzaza5678@gmail.com">
+  <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
 </a>
 </p>
 
@@ -194,10 +285,6 @@ I've been learning code for **6 years** and my next language is **Golang**!!
 ## 💰 Support Me
 
 <div align="center">
-
-
-
-<br>
 
 [![Sponsor ThemeHackers](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86&style=for-the-badge)](https://github.com/sponsors/ThemeHackers)
 
