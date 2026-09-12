@@ -16,7 +16,7 @@
  
 I've been learning code for **6 years** and my next language is **Golang**!!
 
-Doing it now. https://github.com/ThemeHackers/UniKernel
+
 <table>
 <tr>
 <td>
