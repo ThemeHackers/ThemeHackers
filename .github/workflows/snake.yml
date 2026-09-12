@@ -32,8 +32,8 @@ jobs:
 
       - name: Collect generated files
         run: |
-          mkdir -p dist
-          cp -r profile-3d-contrib dist/
+          sudo mkdir -p dist
+          sudo cp -r profile-3d-contrib dist/
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
