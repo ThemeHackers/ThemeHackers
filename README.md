@@ -3,7 +3,7 @@
 
 # Hi there! <img src="https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif" width="30px" height="30px"> I'm Theme
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Network+Security+Hacker+%26+Software+Dev;White+Hat+%7C+Ethical+Hacker;CVE+Research+%26+PoC+Development;6%2B+Years+of+Coding+Experience;Learning+Golang)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=00D9FF&center=true&vCenter=true&random=false&width=600&lines=Network+Security+Hacker+%26+Software+Dev;White+Hat+%7C+Ethical+Hacker;CVE+Research+%26+PoC+Development;6%2B+Years+of+Coding+Experience;Learning+Golang;%E9%9E%8A%E5%A9%A7%E7%A5%8E+Ju+Jingyi+Fan)](https://git.io/typing-svg)
 
 <a href="https://github.com/ThemeHackers?tab=followers"><img src="https://img.shields.io/github/followers/ThemeHackers?label=Followers&style=flat&color=0e75b6" alt="Followers" /></a>
 <img src="https://komarev.com/ghpvc/?username=ThemeHackers&label=Profile%20views&color=0e75b6&style=flat" alt="Profile views" />
@@ -24,6 +24,57 @@ I've been coding for **6+ years**, focused on **network security & ethical hacki
 - 🤝 Open to collaborate on **Ethical Penetration Testing Tools** or **Vulnerability Discovery Tools**
 - 🍎 Getting interested in **Apple's security**
 - 🎯 Next mission: master **Golang**
+- 🌸 Die-hard fan of **鞠婧祎 Ju Jingyi** — I built her fan chronicle & AI knowledge server (see below 👇)
+
+---
+
+## 🌸 Ju Jingyi (鞠婧祎) Fan Club
+
+<div align="center">
+
+**鞠婧祎 — Ju Jingyi** · proud fan here 🌸
+
+I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) — a fan knowledge portal covering her full profile, 45+ songs & OSTs, complete drama filmography, awards, gallery and a trivia quiz.
+
+<img src="https://jujingyi-kikuuu.vercel.app/images/0040jbadgy1id6amcqte3j62c0340qv602.jpg" width="280" alt="鞠婧祎 Ju Jingyi 🌸" />
+
+### 🤖 Fellow fans — connect the MCP and ask the AI anything about her!
+
+Works with **Claude Desktop / Cursor / VS Code** or any MCP client — 44 tools: profile, filmography, discography, awards, gallery, quiz & deep research:
+
+</div>
+
+```json
+{
+  "mcpServers": {
+    "kiku": {
+      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
+    }
+  }
+}
+```
+
+<div align="center">
+
+### 💻 Prefer the terminal? Install the CLI
+
+</div>
+
+```bash
+npm install -g kiku-agent                    # install globally (or zero-install: npx kiku-agent)
+kiku-agent                                   # start an interactive AI session
+kiku-agent --query "Ju Jingyi filmography"   # one-shot question
+```
+
+<div align="center">
+
+**kiku-agent** — autonomous ReAct agent with live thinking streams, local (LM Studio) / cloud LLM switching, background research jobs, YouTube music streaming & multi-agent debate 🔥
+
+<a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi fan portal" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/mcp"><img src="https://img.shields.io/badge/MCP_Server-%2Fmcp-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
+<a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
+
+</div>
 
 ---
 
@@ -170,9 +221,9 @@ I've been coding for **6+ years**, focused on **network security & ethical hacki
 
 | Certificate | Preview |
 |------------|---------|
-| AI Fundamentals | <img src="certi/DATACAMP/AIEDA0017559086761/AIEDA0017559086761-1.png" width="400" /> |
-| Python Data Analysis | <img src="certi/DATACAMP/PDA0019585449424_page-0001.jpg" width="400" /> |
-| DataCamp Certificate | <img src="certi/DATACAMP/certificate/certificate-1.png" width="400" /> |
+| AI Engineer for Developers Associate | <img src="certi/DATACAMP/AIEDA0017559086761/AIEDA0017559086761-1.png" width="400" /> |
+| Python Data Associate | <img src="certi/DATACAMP/PDA0019585449424_page-0001.jpg" width="400" /> |
+| AWS Cloud Practitioner (CLF-C02) | <img src="certi/DATACAMP/certificate/certificate-1.png" width="400" /> |
 
 </details>
 
