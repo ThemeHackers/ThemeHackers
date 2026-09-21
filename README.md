@@ -34,25 +34,172 @@ I've been coding for **6+ years**, focused on **network security & ethical hacki
 
 **鞠婧祎 — Ju Jingyi** · proud fan here 🌸
 
-I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) — a fan knowledge portal covering her full profile, 45+ songs & OSTs, complete drama filmography, awards, gallery and a trivia quiz.
+I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) — a comprehensive fan portal covering her complete profile, 50+ songs & OSTs, full drama filmography, French high jewelry brand ambassadorship (FRED Paris), awards, 4K gallery, interactive trivia quiz, REST API v1, and AI knowledge assistant.
 
 <img src="https://jujingyi-kikuuu.vercel.app/images/0040jbadgy1id6amcqte3j62c0340qv602.jpg" width="280" alt="鞠婧祎 Ju Jingyi 🌸" />
 
 ### 🤖 Fellow fans — connect the MCP and ask the AI anything about her!
 
-Works with **Claude Desktop / Cursor / VS Code** or any MCP client — 44 tools: profile, filmography, discography, awards, gallery, quiz & deep research:
+Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **74 tools** (Profile & Fandom, Career Timeline, Complete Works & Filmography, Discography with 50+ songs & OSTs, Brand Endorsements, Awards, 4K Gallery, Trivia Quiz, Multi-Agent Deep Research, News Intelligence & Real-time Media Streaming):
 
 </div>
+
+#### ⚡ Remote Streamable HTTP (Cursor, Windsurf, Antigravity, Cline)
+> Add to `.cursor/mcp.json`, `~/.codeium/windsurf/mcp_config.json`, or `.agents/mcp_config.json`:
 
 ```json
 {
   "mcpServers": {
     "kiku": {
-      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
+      "url": "https://jujingyi-kikuuu.vercel.app/mcp",
+      "headers": {
+        "X-API-Key": "YOUR_MCP_API_KEY"
+      }
     }
   }
 }
 ```
+> 🔑 **API Key Requirement**: On production cloud (`https://jujingyi-kikuuu.vercel.app/mcp`), requests require an `X-API-Key` header for security & rate-limit protection. You can claim a free VIP API Key instantly by completing the 12-question Fan Quiz on the portal ([jujingyi-kikuuu.vercel.app](https://jujingyi-kikuuu.vercel.app/)).
+>
+> ⚡ **Zero-Key Offline Alternative**: If you don't want to use an API key, use the **Local Stdio** option below — it runs locally on your machine and unlocks all 74 tools with **zero API key required**!
+
+<details>
+<summary><b>🖥️ Claude Desktop App (Local Stdio via npx — Zero API Key Required)</b></summary>
+
+> Add to `claude_desktop_config.json` (`%APPDATA%\Claude\` on Windows or `~/Library/Application Support/Claude/` on macOS):
+
+```json
+{
+  "mcpServers": {
+    "kiku": {
+      "command": "npx",
+      "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
+      "env": {
+        "KIKU_MCP_ENABLE_WEB_TOOLS": "true"
+      }
+    }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>💻 VS Code & GitHub Copilot (`.vscode/mcp.json`)</b></summary>
+
+> Add to `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "kiku": {
+      "type": "http",
+      "url": "https://jujingyi-kikuuu.vercel.app/mcp",
+      "headers": {
+        "X-API-Key": "YOUR_MCP_API_KEY"
+      }
+    }
+  }
+}
+```
+</details>
+
+<details>
+<summary><b>⚙️ More Clients: Windsurf, Cline, Gemini CLI, Claude Code, LibreChat & OpenCode</b></summary>
+<br>
+
+* **Windsurf** (`~/.codeium/windsurf/mcp_config.json`):
+  ```json
+  {
+    "mcpServers": {
+      "kiku": {
+        "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp",
+        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      }
+    }
+  }
+  ```
+* **Google Antigravity / AGY** (`.agents/mcp_config.json`):
+  ```json
+  {
+    "mcpServers": {
+      "kiku": {
+        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
+        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      }
+    }
+  }
+  ```
+* **Cline / Roo Code** (`cline_mcp_settings.json`):
+  ```json
+  {
+    "mcpServers": {
+      "kiku": {
+        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
+        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      }
+    }
+  }
+  ```
+* **LibreChat** (`librechat.yaml`):
+  ```yaml
+  mcpServers:
+    kiku:
+      type: streamable-http
+      url: https://jujingyi-kikuuu.vercel.app/mcp
+      headers:
+        X-API-Key: YOUR_MCP_API_KEY
+  ```
+* **Gemini CLI** (`~/.gemini/settings.json`):
+  ```json
+  {
+    "mcpServers": {
+      "kiku": {
+        "httpUrl": "https://jujingyi-kikuuu.vercel.app/mcp",
+        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      }
+    }
+  }
+  ```
+* **Claude Code** (`.mcp.json` at project root):
+  ```json
+  {
+    "mcpServers": {
+      "kiku": {
+        "type": "http",
+        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
+        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      }
+    }
+  }
+  ```
+* **OpenCode** (`opencode.json`):
+  ```json
+  {
+    "$schema": "https://opencode.ai/config.json",
+    "mcp": {
+      "kiku": {
+        "type": "remote",
+        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
+        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      }
+    }
+  }
+  ```
+</details>
+
+#### 💬 What can you ask the AI once connected?
+
+Once connected, your AI assistant automatically invokes Kiku MCP tools to answer with verified facts instead of hallucinating:
+
+| Category | Example Question to Ask AI in Chat | Tool Invoked |
+|---|---|---|
+| 🎬 **Dramas & Works** | *"What historical dramas did Ju Jingyi star in, and who were her characters?"* | `search_works`, `get_character_roles` |
+| 🎵 **Discography & OSTs** | *"List her 2024 music releases including her birthday single '0.2s' and 'Dewdrops' OST."* | `search_discography` |
+| 💎 **Brand Endorsements** | *"Tell me about her partnership with French high jewelry house FRED Paris and TuTuCare."* | `get_brand_endorsements` |
+| 🏆 **Career Timeline** | *"Summarize her career milestones from SNH48 Senbatsu elections to her independent studio."* | `get_career_timeline` |
+| 📸 **High-Res Gallery** | *"Find official photoshoot and red carpet gallery images of Ju Jingyi."* | `get_gallery_photos` |
+| 📰 **News Intelligence** | *"Search the latest verified news and announcements about her upcoming series."* | `search_news`, `search_chinese_web` |
+| 🧩 **Interactive Quiz** | *"Give me a 5-question trivia quiz about Ju Jingyi to test my fandom knowledge."* | `run_quiz` |
 
 <div align="center">
 
@@ -64,14 +211,16 @@ Works with **Claude Desktop / Cursor / VS Code** or any MCP client — 44 tools:
 npm install -g kiku-agent                    # install globally (or zero-install: npx kiku-agent)
 kiku-agent                                   # start an interactive AI session
 kiku-agent --query "Ju Jingyi filmography"   # one-shot question
+npx kiku-mcp                                 # run local MCP server over stdio
 ```
 
 <div align="center">
 
-**kiku-agent** — autonomous ReAct agent with live thinking streams, local (LM Studio) / cloud LLM switching, background research jobs, YouTube music streaming & multi-agent debate 🔥
+**kiku-agent** — autonomous ReAct agent with live thinking streams, local LLM (LM Studio / vLLM / Ollama) & cloud provider switching (OpenAI, Gemini, Groq, DeepSeek, OpenRouter), background research subagents, LAN server discovery, YouTube music streaming, 74 MCP tools & luxury Web Chat UI 🔥
 
 <a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi fan portal" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/mcp"><img src="https://img.shields.io/badge/MCP_Server-%2Fmcp-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/mcp"><img src="https://img.shields.io/badge/MCP_Server-74_Tools-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-v1-0284C7?style=for-the-badge" alt="REST API v1" /></a>
 <a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
 
 </div>
@@ -83,7 +232,7 @@ kiku-agent --query "Ju Jingyi filmography"   # one-shot question
 **Languages & Development**
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,bash,html,mysql,vscode,arduino,docker&theme=dark" alt="Languages & tools" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,python,js,nodejs,react,tailwind,bash,html,mysql,git,vscode,arduino,docker&theme=dark" alt="Languages & tools" />
 </a>
 
 **Platforms & Systems**
@@ -135,6 +284,16 @@ kiku-agent --query "Ju Jingyi filmography"   # one-shot question
       </p>
     </td>
     <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2024-21413">CVE-2024-21413</a></h3>
+      <p align="center">Microsoft Outlook RCE (#MonikerLink / CVSS 9.8 Critical) — PoC</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/CVE-2024-21413/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/CVE-2024-21413?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2024-21413?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2025-55182">CVE-2025-55182</a></h3>
       <p align="center">RCE in React Server Components (RSC) — PoC & lab environment</p>
       <p align="center">
@@ -142,22 +301,30 @@ kiku-agent --query "Ju Jingyi filmography"   # one-shot question
         <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2025-55182?style=flat&label=&color=3572A5" alt="Language" />
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
-      <h3 align="center"><a href="https://github.com/ThemeHackers/AppleBLE">AppleBLE</a></h3>
-      <p align="center">Advertising Apple devices over BLE (Bluetooth Low Energy)</p>
+      <h3 align="center"><a href="https://github.com/ThemeHackers/CVE-2025-30208">CVE-2025-30208</a></h3>
+      <p align="center">Vite dev server arbitrary file read vulnerability — PoC</p>
       <p align="center">
-        <a href="https://github.com/ThemeHackers/AppleBLE/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/AppleBLE?style=social&label=Stars" alt="Stars" /></a>
-        <img src="https://img.shields.io/github/languages/top/ThemeHackers/AppleBLE?style=flat&label=&color=3572A5" alt="Language" />
+        <a href="https://github.com/ThemeHackers/CVE-2025-30208/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/CVE-2025-30208?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/CVE-2025-30208?style=flat&label=&color=3572A5" alt="Language" />
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3 align="center"><a href="https://github.com/ThemeHackers/NetHawk">NetHawk</a></h3>
       <p align="center">Network attack detection with Discord alerts, score reports & attack paths</p>
       <p align="center">
         <a href="https://github.com/ThemeHackers/NetHawk/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/NetHawk?style=social&label=Stars" alt="Stars" /></a>
         <img src="https://img.shields.io/github/languages/top/ThemeHackers/NetHawk?style=flat&label=&color=3572A5" alt="Language" />
+      </p>
+    </td>
+    <td width="50%" valign="top">
+      <h3 align="center"><a href="https://github.com/ThemeHackers/AppleBLE">AppleBLE</a></h3>
+      <p align="center">Advertising Apple devices over BLE (Bluetooth Low Energy)</p>
+      <p align="center">
+        <a href="https://github.com/ThemeHackers/AppleBLE/stargazers"><img src="https://img.shields.io/github/stars/ThemeHackers/AppleBLE?style=social&label=Stars" alt="Stars" /></a>
+        <img src="https://img.shields.io/github/languages/top/ThemeHackers/AppleBLE?style=flat&label=&color=3572A5" alt="Language" />
       </p>
     </td>
   </tr>
