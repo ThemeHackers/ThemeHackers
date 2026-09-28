@@ -40,28 +40,35 @@ I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.ap
 
 ### 🤖 Fellow fans — connect the MCP and ask the AI anything about her!
 
-Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **74 tools** (Profile & Fandom, Career Timeline, Complete Works & Filmography, Discography with 50+ songs & OSTs, Brand Endorsements, Awards, 4K Gallery, Trivia Quiz, Multi-Agent Deep Research, News Intelligence & Real-time Media Streaming):
+Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **77 tools** (Profile & Fandom, Career Timeline, Complete Works & Filmography, Discography with 50+ songs & OSTs, Brand Endorsements, Awards, 4K Gallery, Trivia Quiz, Multi-Agent Deep Research, News Intelligence & Real-time Media Streaming):
 
 </div>
 
-#### ⚡ Remote Streamable HTTP (Cursor, Windsurf, Antigravity, Cline)
-> Add to `.cursor/mcp.json`, `~/.codeium/windsurf/mcp_config.json`, or `.agents/mcp_config.json`:
+#### ⚡ Remote Streamable HTTP — OAuth 2.1 (no API keys)
+> The cloud endpoint `https://jujingyi-kikuuu.vercel.app/mcp` requires **OAuth 2.1** — static `X-API-Key` headers are rejected. OAuth-capable clients handle everything automatically: they discover the authorization server via `/.well-known/oauth-protected-resource/mcp`, self-register through dynamic client registration (RFC 7591) on first connect, and open a **one-time browser sign-in**. No keys or secrets belong in the config.
+
+**Cursor** (`.cursor/mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "kiku": {
-      "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-      "headers": {
-        "X-API-Key": "YOUR_MCP_API_KEY"
+      "command": "npx",
+      "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
+      "env": {
+        "KIKU_MCP_ENABLE_WEB_TOOLS": "true"
       }
+    },
+    "kiku-remote": {
+      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
     }
   }
 }
 ```
-> 🔑 **API Key Requirement**: On production cloud (`https://jujingyi-kikuuu.vercel.app/mcp`), requests require an `X-API-Key` header for security & rate-limit protection. You can claim a free VIP API Key instantly by completing the 12-question Fan Quiz on the portal ([jujingyi-kikuuu.vercel.app](https://jujingyi-kikuuu.vercel.app/)).
+
+> 🔑 **Need explicit credentials?** Clients without discovery support (Gemini CLI, OpenCode with pre-registered credentials) take an explicit `oauth` block instead. Complete the **12-question MCP Fan Quiz** on the portal — it dynamically registers an OAuth 2.1 client for you and returns a **Client ID / Client Secret** pair ([jujingyi-kikuuu.vercel.app](https://jujingyi-kikuuu.vercel.app/)).
 >
-> ⚡ **Zero-Key Offline Alternative**: If you don't want to use an API key, use the **Local Stdio** option below — it runs locally on your machine and unlocks all 74 tools with **zero API key required**!
+> ⚡ **Zero-Key Offline Alternative**: the **Local Stdio** entry (`"kiku"` above, or the Claude Desktop block below) runs locally on your machine and unlocks all **77 tools** with zero keys and zero sign-in!
 
 <details>
 <summary><b>🖥️ Claude Desktop App (Local Stdio via npx — Zero API Key Required)</b></summary>
@@ -86,17 +93,22 @@ Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **74 tools** (P
 <details>
 <summary><b>💻 VS Code & GitHub Copilot (`.vscode/mcp.json`)</b></summary>
 
-> Add to `.vscode/mcp.json`:
+> Add to `.vscode/mcp.json` — VS Code performs OAuth discovery itself; pick **Authenticate** when prompted:
 
 ```json
 {
   "servers": {
     "kiku": {
-      "type": "http",
-      "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-      "headers": {
-        "X-API-Key": "YOUR_MCP_API_KEY"
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
+      "env": {
+        "KIKU_MCP_ENABLE_WEB_TOOLS": "true"
       }
+    },
+    "kiku-remote": {
+      "type": "http",
+      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
     }
   }
 }
@@ -107,80 +119,84 @@ Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **74 tools** (P
 <summary><b>⚙️ More Clients: Windsurf, Cline, Gemini CLI, Claude Code, LibreChat & OpenCode</b></summary>
 <br>
 
-* **Windsurf** (`~/.codeium/windsurf/mcp_config.json`):
+* **Windsurf** (`~/.codeium/windsurf/mcp_config.json`) — Windsurf performs OAuth discovery itself:
   ```json
   {
     "mcpServers": {
-      "kiku": {
-        "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+      "kiku-remote": {
+        "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp"
       }
     }
   }
   ```
-* **Google Antigravity / AGY** (`.agents/mcp_config.json`):
+* **Google Antigravity / AGY** (`.agents/mcp_config.json`) — remote entries must use `serverUrl` (a `url` key fails to connect). If your build refuses the OAuth prompt, use the local stdio `kiku` entry instead:
   ```json
   {
     "mcpServers": {
-      "kiku": {
+      "kiku-remote": {
+        "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp"
+      }
+    }
+  }
+  ```
+* **Cline / Roo Code** (`cline_mcp_settings.json`) — the type must be Cline's exact spelling `streamableHttp` (`streamable-http` fails with SSE 405 errors):
+  ```json
+  {
+    "mcpServers": {
+      "kiku-remote": {
+        "type": "streamableHttp",
         "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+        "disabled": false,
+        "alwaysAllow": []
       }
     }
   }
   ```
-* **Cline / Roo Code** (`cline_mcp_settings.json`):
-  ```json
-  {
-    "mcpServers": {
-      "kiku": {
-        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
-      }
-    }
-  }
-  ```
-* **LibreChat** (`librechat.yaml`):
+* **LibreChat** (`librechat.yaml`) — requires a build with MCP OAuth support; the authorization server is discovered automatically and `customHeaders` cannot substitute for the flow:
   ```yaml
   mcpServers:
-    kiku:
+    kiku-remote:
       type: streamable-http
       url: https://jujingyi-kikuuu.vercel.app/mcp
-      headers:
-        X-API-Key: YOUR_MCP_API_KEY
   ```
-* **Gemini CLI** (`~/.gemini/settings.json`):
+* **Gemini CLI** (`~/.gemini/settings.json`) — authenticate once with `/mcp auth kiku-remote`:
   ```json
   {
     "mcpServers": {
-      "kiku": {
+      "kiku-remote": {
         "httpUrl": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+        "oauth": {
+          "enabled": true,
+          "authorizationUrl": "https://tcjxrlsebxdyoohcugsr.supabase.co/auth/v1/oauth/authorize",
+          "tokenUrl": "https://tcjxrlsebxdyoohcugsr.supabase.co/auth/v1/oauth/token",
+          "redirectionUrl": "http://localhost:7777/oauth/callback",
+          "scopes": ["openid", "profile", "email"]
+        }
       }
     }
   }
   ```
-* **Claude Code** (`.mcp.json` at project root):
+* **Claude Code** (`.mcp.json` at project root) — run `/mcp` and choose Authenticate when prompted:
   ```json
   {
     "mcpServers": {
-      "kiku": {
+      "kiku-remote": {
         "type": "http",
-        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+        "url": "https://jujingyi-kikuuu.vercel.app/mcp"
       }
     }
   }
   ```
-* **OpenCode** (`opencode.json`):
+* **OpenCode** (`opencode.json`) — auto-performs OAuth with dynamic client registration on 401; sign in once with `opencode mcp auth kiku-remote`. v1 (stable) places servers under `"mcp"` directly, while v2 nests them under `"mcp"."servers"` — shown here for v1:
   ```json
   {
     "$schema": "https://opencode.ai/config.json",
     "mcp": {
-      "kiku": {
+      "kiku-remote": {
         "type": "remote",
         "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "headers": { "X-API-Key": "YOUR_MCP_API_KEY" }
+        "oauth": {},
+        "enabled": true
       }
     }
   }
@@ -216,10 +232,10 @@ npx kiku-mcp                                 # run local MCP server over stdio
 
 <div align="center">
 
-**kiku-agent** — autonomous ReAct agent with live thinking streams, local LLM (LM Studio / vLLM / Ollama) & cloud provider switching (OpenAI, Gemini, Groq, DeepSeek, OpenRouter), background research subagents, LAN server discovery, YouTube music streaming, 74 MCP tools & luxury Web Chat UI 🔥
+**kiku-agent** — autonomous ReAct agent with live thinking streams, local LLM (LM Studio / vLLM / Ollama) & cloud provider switching (OpenAI, Gemini, Groq, DeepSeek, OpenRouter), background research subagents, LAN server discovery, YouTube music streaming, 77 MCP tools & luxury Web Chat UI 🔥
 
 <a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi fan portal" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/mcp"><img src="https://img.shields.io/badge/MCP_Server-74_Tools-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/mcp"><img src="https://img.shields.io/badge/MCP_Server-77_Tools_OAuth_2.1-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
 <a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-v1-0284C7?style=for-the-badge" alt="REST API v1" /></a>
 <a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
 
