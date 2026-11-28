@@ -42,8 +42,6 @@ Want to explore the full features, CLI, or MCP setup? Check out the links below:
 
 <a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi Fan Portal" /></a>
 <a href="https://github.com/ThemeHackers/jujingyi_kikuuu"><img src="https://img.shields.io/badge/Docs_%26_Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/chat"><img src="https://img.shields.io/badge/Web_Chat-Open-10B981?style=for-the-badge" alt="Kiku Web Chat" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/settings#mcp"><img src="https://img.shields.io/badge/MCP_Server-Connect-8B5CF6?style=for-the-badge" alt="Kiku MCP Setup" /></a>
 <a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-Docs-0284C7?style=for-the-badge" alt="REST API Docs" /></a>
 <a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
 
