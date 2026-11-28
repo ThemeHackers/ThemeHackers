@@ -34,71 +34,18 @@ I've been coding for **6+ years**, focused on **network security & ethical hacki
 
 **鞠婧祎 — Ju Jingyi** · proud fan here 🌸
 
-I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) & [**`kiku-agent`**](https://github.com/ThemeHackers/jujingyi_kikuuu) (`v1.5.6`) — a 5-language fan portal (`th`/`zh`/`en`/`ja`/`ko`), **REST API v1 (OpenAPI 3.0.3)**, **MCP server**, **Web Chat**, and terminal AI agent covering her profile & career timeline (2013–2026), **18** dramas & films, **51** unique songs & OSTs, **49** MVs & stages, **36** brand endorsements, **20** awards, **Ju Xue (鞠学)** makeup guide, 4K gallery, Douyin updates, and fan quiz.
+I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) and [**`kiku-agent`**](https://github.com/ThemeHackers/jujingyi_kikuuu) — a fan portal, REST API, MCP server, Web Chat, and AI assistant dedicated to Ju Jingyi's biography, dramas, music, endorsements, and career archive.
 
-<img src="https://jujingyi-kikuuu.vercel.app/images/0040jbadgy1id6amcqte3j62c0340qv602.jpg" width="280" alt="鞠婧祎 Ju Jingyi 🌸" />
+<img src="https://jujingyi-kikuuu.vercel.app/images/0040jbadgy1id6amcqte3j62c0340qv602.jpg" width="260" alt="鞠婧祎 Ju Jingyi 🌸" />
 
-### 🤖 Connect via MCP (`2025-11-25`)
+Want to explore the full features, CLI, or MCP setup? Check out the links below:
 
-**91–98 tools** (`94` default · `98` with web tools enabled), **14 resources**, **4 templates**, and **11 prompts** across **27 scopes**.
-
-</div>
-
-> **Remote Streamable HTTP** (`https://jujingyi-kikuuu.vercel.app/mcp`) uses **OAuth 2.1** with automatic discovery (`/.well-known/oauth-protected-resource`), RFC 7591 Dynamic Client Registration, and a built-in `/oauth/consent` sign-in page (REST API keys are not accepted). Clients without discovery support can mint an OAuth client via the 12-question **MCP Quiz** on [`/api-docs`](https://jujingyi-kikuuu.vercel.app/api-docs). For zero-sign-in local use, use the **stdio** entry (`kiku-mcp`).
-
-**Cursor / Claude Desktop** (`.cursor/mcp.json` or `claude_desktop_config.json`):
-
-```json
-{
-  "mcpServers": {
-    "kiku": {
-      "command": "npx",
-      "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
-      "env": { "KIKU_MCP_ENABLE_WEB_TOOLS": "true" }
-    },
-    "kiku-remote": {
-      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
-    }
-  }
-}
-```
-
-<details>
-<summary><b>⚙️ Other Clients (VS Code, Claude Code, Windsurf, Antigravity, Cline, OpenCode)</b></summary>
-<br>
-
-- **VS Code** (`.vscode/mcp.json`): `"servers": { "kiku-remote": { "type": "http", "url": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
-- **Claude Code** (`.mcp.json` / `~/.claude.json`): `"mcpServers": { "kiku-remote": { "type": "http", "url": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
-- **Windsurf / Antigravity**: `"mcpServers": { "kiku-remote": { "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
-- **Cline / Roo Code**: `"mcpServers": { "kiku-remote": { "type": "streamableHttp", "url": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
-- **OpenCode** (`opencode.json`): `"mcp": { "kiku-remote": { "type": "remote", "url": "https://jujingyi-kikuuu.vercel.app/mcp", "oauth": {}, "enabled": true } }`
-
-See [`/settings#mcp`](https://jujingyi-kikuuu.vercel.app/settings#mcp) for full copy-paste configs (including stdio and Windows variants).
-
-</details>
-
-<div align="center">
-
-### 💻 CLI & Local Agent (`kiku-agent v1.5.6`)
-
-</div>
-
-```bash
-npm install -g kiku-agent@latest             # install globally
-kiku-agent                                   # interactive CLI (57 commands, 96 tools)
-kiku-agent --query "Ju Jingyi filmography"   # one-shot query
-npx -y -p kiku-agent kiku-mcp                # local MCP server over stdio
-```
-
-<div align="center">
-
-Local (**LM Studio / vLLM / Ollama** + Colab tunnel & LAN auto-connect) and cloud (**OpenAI, Anthropic, Gemini, Groq, DeepSeek, OpenRouter**, custom) inference · multi-agent deep research, claim verification & debate · opt-in local-only **Desktop Control** (`/desktop`) & **Browser Control** (`/browser` — isolated Kiku Browser or Chrome/Edge/Brave, YouTube ad auto-skip & on-page visual feedback) · Rust WASM/N-API GPU & VRAM telemetry · isolated **Docker code sandbox** (Python, JS, C, C++, Go) · 5-language **Web Chat** with animated Browser Mission Control & built-in music player.
-
-<a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi fan portal" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/settings#mcp"><img src="https://img.shields.io/badge/MCP_Server-98_Tools_OAuth_2.1-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-v1_OpenAPI_3.0.3-0284C7?style=for-the-badge" alt="REST API v1" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/chat"><img src="https://img.shields.io/badge/Web_Chat-5_Languages-10B981?style=for-the-badge" alt="Kiku Web Chat" /></a>
-<a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent_v1.5.6-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi Fan Portal" /></a>
+<a href="https://github.com/ThemeHackers/jujingyi_kikuuu"><img src="https://img.shields.io/badge/Docs_%26_Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/chat"><img src="https://img.shields.io/badge/Web_Chat-Open-10B981?style=for-the-badge" alt="Kiku Web Chat" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/settings#mcp"><img src="https://img.shields.io/badge/MCP_Server-Connect-8B5CF6?style=for-the-badge" alt="Kiku MCP Setup" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-Docs-0284C7?style=for-the-badge" alt="REST API Docs" /></a>
+<a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
 
 </div>
 
