@@ -34,46 +34,19 @@ I've been coding for **6+ years**, focused on **network security & ethical hacki
 
 **鞠婧祎 — Ju Jingyi** · proud fan here 🌸
 
-I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) (`v1.4.24`) — a comprehensive fan portal covering her complete profile & career timeline (2013–2026), **51 songs & OSTs** (+ 34 MVs & stages), **18 dramas & films** (including 2026 titles *Veil of Shadows*, *The Eternal Fragrance*, *Wanhua Sin*, and *Let's Fight*), **38 brand endorsements** (FRED Paris LVMH, HONOR 700 Series, and Global Brand Ambassador titles), **Ju Xue (鞠学) Aesthetic & Makeup Guide**, Study with Kiku Pomodoro lounge, Douyin reels feed, 20 awards, 4K gallery, interactive trivia quiz, **REST API v1 (OpenAPI 3.0.3)**, 5-language **Web Chat**, and AI knowledge assistant.
+I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) & [**`kiku-agent`**](https://github.com/ThemeHackers/jujingyi_kikuuu) (`v1.5.6`) — a 5-language fan portal (`th`/`zh`/`en`/`ja`/`ko`), **REST API v1 (OpenAPI 3.0.3)**, **MCP server**, **Web Chat**, and terminal AI agent covering her profile & career timeline (2013–2026), **18** dramas & films, **51** unique songs & OSTs, **49** MVs & stages, **36** brand endorsements, **20** awards, **Ju Xue (鞠学)** makeup guide, 4K gallery, Douyin updates, and fan quiz.
 
 <img src="https://jujingyi-kikuuu.vercel.app/images/0040jbadgy1id6amcqte3j62c0340qv602.jpg" width="280" alt="鞠婧祎 Ju Jingyi 🌸" />
 
-### 🤖 Fellow fans — connect the MCP and ask the AI anything about her!
+### 🤖 Connect via MCP (`2025-11-25`)
 
-Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **83 tools** (80 direct + 3 aliases), **10 resources**, **4 dynamic resource templates**, and **9 prompts** — covering Profile & Fandom, Career Timeline, Complete Filmography, Discography, **Ju Xue Makeup & Beauty Styles**, Brand Endorsements, Awards, 4K Gallery, Douyin Updates, Trivia Quiz, Multi-Agent Deep Research & Debate, Claim Verification, News Intelligence, Predictive GPU/VRAM Estimation, Docker Polyglot Sandbox & Real-time Media Streaming:
+**91–98 tools** (`94` default · `98` with web tools enabled), **14 resources**, **4 templates**, and **11 prompts** across **27 scopes**.
 
 </div>
 
-#### ⚡ Remote Streamable HTTP — OAuth 2.1 (no API keys)
-> The cloud endpoint `https://jujingyi-kikuuu.vercel.app/mcp` runs stateless **Streamable HTTP (`POST /mcp`)** hardened against OWASP MCP Top 10 and requires **OAuth 2.1** — static `X-API-Key` headers are rejected and unauthorized tools are hidden by default per scope (`mcp_scopes`). OAuth-capable clients handle everything automatically: they discover metadata via `/.well-known/oauth-protected-resource/mcp` (and the RFC 8414 / RFC 7591 dynamic registration facade at `/.well-known/oauth-authorization-server`), self-register on first connect, and open the built-in **one-time consent UI** (`/oauth/consent` — Google, GitHub, Email OTP code, or Password). No keys or secrets belong in the config.
+> **Remote Streamable HTTP** (`https://jujingyi-kikuuu.vercel.app/mcp`) uses **OAuth 2.1** with automatic discovery (`/.well-known/oauth-protected-resource`), RFC 7591 Dynamic Client Registration, and a built-in `/oauth/consent` sign-in page (REST API keys are not accepted). Clients without discovery support can mint an OAuth client via the 12-question **MCP Quiz** on [`/api-docs`](https://jujingyi-kikuuu.vercel.app/api-docs). For zero-sign-in local use, use the **stdio** entry (`kiku-mcp`).
 
-**Cursor** (`.cursor/mcp.json`):
-
-```json
-{
-  "mcpServers": {
-    "kiku": {
-      "command": "npx",
-      "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
-      "env": {
-        "KIKU_MCP_ENABLE_WEB_TOOLS": "true"
-      }
-    },
-    "kiku-remote": {
-      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
-    }
-  }
-}
-```
-
-> 🔑 **Need explicit credentials?** Clients without discovery support (Gemini CLI, OpenCode with pre-registered credentials) take an explicit `oauth` block instead. Complete the **12-question MCP Fan Quiz** on [`/api-docs`](https://jujingyi-kikuuu.vercel.app/api-docs) — it dynamically registers an OAuth 2.1 client for you and returns a **Client ID / Client Secret** pair.
->
-> ⚡ **Zero-Key Offline Alternative**: the **Local Stdio** entry (`"kiku"` above, or the Claude Desktop block below) runs locally on your machine and unlocks all **83 tools** with zero keys and zero sign-in!
-
-<details>
-<summary><b>🖥️ Claude Desktop App (Local Stdio via npx — Zero API Key Required, plus Remote HTTP)</b></summary>
-
-> Add to `claude_desktop_config.json` (`%APPDATA%\Claude\` on Windows or `~/Library/Application Support/Claude/` on macOS). Remote `http` works on current builds; if your build ignores it, use the local `kiku` stdio entry:
+**Cursor / Claude Desktop** (`.cursor/mcp.json` or `claude_desktop_config.json`):
 
 ```json
 {
@@ -81,169 +54,51 @@ Supports **10 AI platforms & IDEs** (Protocol `2025-11-25`) with **83 tools** (8
     "kiku": {
       "command": "npx",
       "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
-      "env": {
-        "KIKU_MCP_ENABLE_WEB_TOOLS": "true"
-      }
+      "env": { "KIKU_MCP_ENABLE_WEB_TOOLS": "true" }
     },
     "kiku-remote": {
-      "type": "http",
       "url": "https://jujingyi-kikuuu.vercel.app/mcp"
     }
   }
 }
 ```
-</details>
 
 <details>
-<summary><b>💻 VS Code & GitHub Copilot (`.vscode/mcp.json`)</b></summary>
-
-> Add to `.vscode/mcp.json` — VS Code performs OAuth discovery itself; pick **Authenticate** when prompted:
-
-```json
-{
-  "servers": {
-    "kiku": {
-      "type": "stdio",
-      "command": "npx",
-      "args": ["-y", "-p", "kiku-agent", "kiku-mcp"],
-      "env": {
-        "KIKU_MCP_ENABLE_WEB_TOOLS": "true"
-      }
-    },
-    "kiku-remote": {
-      "type": "http",
-      "url": "https://jujingyi-kikuuu.vercel.app/mcp"
-    }
-  }
-}
-```
-</details>
-
-<details>
-<summary><b>⚙️ More Clients: Windsurf, Antigravity, Cline, Gemini CLI, Claude Code, LibreChat & OpenCode</b></summary>
+<summary><b>⚙️ Other Clients (VS Code, Claude Code, Windsurf, Antigravity, Cline, OpenCode)</b></summary>
 <br>
 
-* **Windsurf** (`~/.codeium/windsurf/mcp_config.json`) — Windsurf performs OAuth discovery itself:
-  ```json
-  {
-    "mcpServers": {
-      "kiku-remote": {
-        "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp"
-      }
-    }
-  }
-  ```
-* **Google Antigravity / AGY** (`.agents/mcp_config.json`) — remote entries must use `serverUrl` (a `url` key fails to connect). If your build refuses the OAuth prompt, use the local stdio `kiku` entry instead:
-  ```json
-  {
-    "mcpServers": {
-      "kiku-remote": {
-        "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp"
-      }
-    }
-  }
-  ```
-* **Cline / Roo Code** (`cline_mcp_settings.json`) — the type must be Cline's exact spelling `streamableHttp` (`streamable-http` fails with SSE 405 errors):
-  ```json
-  {
-    "mcpServers": {
-      "kiku-remote": {
-        "type": "streamableHttp",
-        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "disabled": false,
-        "alwaysAllow": []
-      }
-    }
-  }
-  ```
-* **LibreChat** (`librechat.yaml`) — requires a build with MCP OAuth support; the authorization server is discovered automatically and `customHeaders` cannot substitute for the flow:
-  ```yaml
-  mcpServers:
-    kiku-remote:
-      type: streamable-http
-      url: https://jujingyi-kikuuu.vercel.app/mcp
-  ```
-* **Gemini CLI** (`~/.gemini/settings.json`) — authenticate once with `/mcp auth kiku-remote` (if your build asks for a `clientId`, add one from the MCP Quiz on `/api-docs`):
-  ```json
-  {
-    "mcpServers": {
-      "kiku-remote": {
-        "httpUrl": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "oauth": {
-          "enabled": true,
-          "authorizationUrl": "https://tcjxrlsebxdyoohcugsr.supabase.co/auth/v1/oauth/authorize",
-          "tokenUrl": "https://tcjxrlsebxdyoohcugsr.supabase.co/auth/v1/oauth/token",
-          "redirectionUrl": "http://localhost:7777/oauth/callback",
-          "scopes": ["openid", "profile", "email"]
-        }
-      }
-    }
-  }
-  ```
-* **Claude Code** (`.mcp.json` at project root or `~/.claude.json`) — run `/mcp` and choose Authenticate when prompted:
-  ```json
-  {
-    "mcpServers": {
-      "kiku-remote": {
-        "type": "http",
-        "url": "https://jujingyi-kikuuu.vercel.app/mcp"
-      }
-    }
-  }
-  ```
-* **OpenCode** (`opencode.json`) — auto-performs OAuth with dynamic client registration on 401; sign in once with `opencode mcp auth kiku-remote` (run `opencode mcp logout kiku-remote` first if re-auth hits `invalid redirect_uri`). v1 (stable) places servers under `"mcp"` directly, while v2 nests them under `"mcp"."servers"` — shown here for v1:
-  ```json
-  {
-    "$schema": "https://opencode.ai/config.json",
-    "mcp": {
-      "kiku-remote": {
-        "type": "remote",
-        "url": "https://jujingyi-kikuuu.vercel.app/mcp",
-        "oauth": {},
-        "enabled": true
-      }
-    }
-  }
-  ```
+- **VS Code** (`.vscode/mcp.json`): `"servers": { "kiku-remote": { "type": "http", "url": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
+- **Claude Code** (`.mcp.json` / `~/.claude.json`): `"mcpServers": { "kiku-remote": { "type": "http", "url": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
+- **Windsurf / Antigravity**: `"mcpServers": { "kiku-remote": { "serverUrl": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
+- **Cline / Roo Code**: `"mcpServers": { "kiku-remote": { "type": "streamableHttp", "url": "https://jujingyi-kikuuu.vercel.app/mcp" } }`
+- **OpenCode** (`opencode.json`): `"mcp": { "kiku-remote": { "type": "remote", "url": "https://jujingyi-kikuuu.vercel.app/mcp", "oauth": {}, "enabled": true } }`
+
+See [`/settings#mcp`](https://jujingyi-kikuuu.vercel.app/settings#mcp) for full copy-paste configs (including stdio and Windows variants).
+
 </details>
-
-#### 💬 What can you ask the AI once connected?
-
-Once connected, your AI assistant automatically invokes Kiku MCP tools to answer with verified facts instead of hallucinating:
-
-| Category | Example Question to Ask AI in Chat | Tool Invoked |
-|---|---|---|
-| 🎬 **Dramas & Works** | *"What historical and fantasy dramas did Ju Jingyi star in, including her 2026 series?"* | `search_works`, `get_character_roles` |
-| 🎵 **Discography & OSTs** | *"List her 2025–2026 music releases including 'FIND THE WAY', 'Rosa', and 'Dew Before Dawn (Dewdrops)' OST."* | `search_discography`, `get_music_videos` |
-| 💄 **Ju Xue Makeup & Aesthetics** | *"Explain Ju Jingyi's 'Ju Xue' makeup philosophy, 90s Hong Kong Retro look, and Plain Water Makeup tips."* | `get_makeup_style` |
-| 💎 **Brand Endorsements** | *"Tell me about her partnerships with FRED Paris (LVMH), HONOR 700 Series, and her 2026 Global Ambassador brands."* | `get_brand_endorsements` |
-| 🏆 **Career Timeline & Awards** | *"Summarize her career milestones from SNH48 Senbatsu elections to her independent studio and 2026 awards."* | `get_career_timeline`, `get_awards` |
-| 📸 **4K Gallery & Douyin** | *"Find official photoshoot, red carpet gallery images, and her latest Douyin reels."* | `get_gallery_photos`, `get_douyin_updates` |
-| 📰 **News & Deep Research** | *"Verify the latest rumors or run multi-agent deep research on her upcoming projects."* | `search_news`, `search_chinese_web`, `run_deep_research`, `verify_claim` |
-| 🧩 **Interactive Quiz** | *"Give me a 5-question trivia quiz about Ju Jingyi to test my fandom knowledge."* | `run_quiz` |
 
 <div align="center">
 
-### 💻 Prefer the terminal? Install the CLI
+### 💻 CLI & Local Agent (`kiku-agent v1.5.6`)
 
 </div>
 
 ```bash
-npm install -g kiku-agent@latest             # install globally (or zero-install: npx kiku-agent)
-kiku-agent                                   # start an interactive AI session
-kiku-agent --query "Ju Jingyi filmography"   # one-shot question
-npx -y -p kiku-agent kiku-mcp                # run local MCP server over stdio
+npm install -g kiku-agent@latest             # install globally
+kiku-agent                                   # interactive CLI (57 commands, 96 tools)
+kiku-agent --query "Ju Jingyi filmography"   # one-shot query
+npx -y -p kiku-agent kiku-mcp                # local MCP server over stdio
 ```
 
 <div align="center">
 
-**kiku-agent `v1.4.24`** — autonomous ReAct agent with live thinking streams & reasoning effort controls, local LLM (**LM Studio / vLLM / Ollama** + Colab tunnel) & cloud provider switching (**OpenAI, Anthropic, Gemini, Groq, DeepSeek, OpenRouter**, custom), background research subagents, claim verification & multi-agent debate, vision image analysis, predictive GPU/VRAM telemetry, isolated **Docker polyglot code sandbox** (Python, JS, C, C++, Go), LAN server discovery, YouTube music streaming, **83 MCP tools** & 5-language **Web Chat UI** (TH / ZH / EN / JA / KO) 🔥
+Local (**LM Studio / vLLM / Ollama** + Colab tunnel & LAN auto-connect) and cloud (**OpenAI, Anthropic, Gemini, Groq, DeepSeek, OpenRouter**, custom) inference · multi-agent deep research, claim verification & debate · opt-in local-only **Desktop Control** (`/desktop`) & **Browser Control** (`/browser` — isolated Kiku Browser or Chrome/Edge/Brave, YouTube ad auto-skip & on-page visual feedback) · Rust WASM/N-API GPU & VRAM telemetry · isolated **Docker code sandbox** (Python, JS, C, C++, Go) · 5-language **Web Chat** with animated Browser Mission Control & built-in music player.
 
 <a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi fan portal" /></a>
-<a href="https://jujingyi-kikuuu.vercel.app/settings#mcp"><img src="https://img.shields.io/badge/MCP_Server-83_Tools_OAuth_2.1-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
+<a href="https://jujingyi-kikuuu.vercel.app/settings#mcp"><img src="https://img.shields.io/badge/MCP_Server-98_Tools_OAuth_2.1-8B5CF6?style=for-the-badge" alt="Kiku MCP server" /></a>
 <a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-v1_OpenAPI_3.0.3-0284C7?style=for-the-badge" alt="REST API v1" /></a>
 <a href="https://jujingyi-kikuuu.vercel.app/chat"><img src="https://img.shields.io/badge/Web_Chat-5_Languages-10B981?style=for-the-badge" alt="Kiku Web Chat" /></a>
-<a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent_v1.4.24-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
+<a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/badge/npm-kiku--agent_v1.5.6-CB3837?style=for-the-badge&logo=npm&logoColor=white" alt="kiku-agent on npm" /></a>
 
 </div>
 
