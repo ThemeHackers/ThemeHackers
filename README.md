@@ -34,14 +34,13 @@ I've been coding for **6+ years**, focused on **network security & ethical hacki
 
 **鞠婧祎 — Ju Jingyi** · proud fan here 🌸
 
-I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) and [**`kiku-agent`**](https://github.com/ThemeHackers/jujingyi_kikuuu) — a fan portal, REST API, MCP server, Web Chat, and AI assistant dedicated to Ju Jingyi's biography, dramas, music, endorsements, and career archive.
+I built the [**Ju Jingyi Official Chronicle**](https://jujingyi-kikuuu.vercel.app/) and [**`kiku-agent`**](https://www.npmjs.com/package/kiku-agent) — a fan portal, REST API, MCP server, Web Chat, and AI assistant dedicated to Ju Jingyi's biography, dramas, music, endorsements, and career archive.
 
 <img src="https://jujingyi-kikuuu.vercel.app/images/0040jbadgy1id6amcqte3j62c0340qv602.jpg" width="260" alt="鞠婧祎 Ju Jingyi 🌸" />
 
 Want to explore the full features, CLI, or MCP setup? Check out the links below:
 
 <a href="https://jujingyi-kikuuu.vercel.app/"><img src="https://img.shields.io/badge/%F0%9F%8C%B8_Fan_Portal-jujingyi--kikuuu.vercel.app-EC4899?style=for-the-badge" alt="Ju Jingyi Fan Portal" /></a>
-<a href="https://github.com/ThemeHackers/jujingyi_kikuuu"><img src="https://img.shields.io/badge/Docs_%26_Source-GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repository" /></a>
 <a href="https://jujingyi-kikuuu.vercel.app/api-docs"><img src="https://img.shields.io/badge/REST_API-Docs-0284C7?style=for-the-badge" alt="REST API Docs" /></a>
 <a href="https://www.npmjs.com/package/kiku-agent"><img src="https://img.shields.io/npm/v/kiku-agent?style=for-the-badge&logo=npm&logoColor=white&label=kiku-agent&color=CB3837" alt="kiku-agent on npm" /></a>
 
