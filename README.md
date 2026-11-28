@@ -54,7 +54,7 @@ Want to explore the full features, CLI, or MCP setup? Check out the links below:
 **Languages & Development**
 
 <a href="https://skillicons.dev">
-  <img src="https://skillicons.dev/icons?i=c,cpp,python,js,nodejs,react,tailwind,bash,html,mysql,git,vscode,arduino,docker&theme=dark" alt="Languages & tools" />
+  <img src="https://skillicons.dev/icons?i=c,cpp,rust,python,js,nodejs,react,tailwind,bash,html,mysql,git,vscode,arduino,docker&theme=dark" alt="Languages & tools" />
 </a>
 
 **Platforms & Systems**
@@ -62,16 +62,6 @@ Want to explore the full features, CLI, or MCP setup? Check out the links below:
 <a href="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=linux,kali,apple,raspberrypi&theme=dark" alt="Platforms" />
 </a>
-
-<!-- Security toolkit — แก้/ลบออกได้ตามที่ใช้จริง -->
-**Security Toolkit**
-
-![Nmap](https://img.shields.io/badge/Nmap-2E5C8A?style=for-the-badge)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge)
-![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge)
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=for-the-badge)
-![Ghidra](https://img.shields.io/badge/Ghidra-2F2F2F?style=for-the-badge)
-![Hashcat](https://img.shields.io/badge/Hashcat-1D7EBA?style=for-the-badge)
 
 ---
 
